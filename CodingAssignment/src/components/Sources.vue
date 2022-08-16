@@ -2,6 +2,7 @@
     <div class="source-container">
         <button class="btn btn-primary" @click="addMediaSource">Add Source</button>
 
+        <!-- TODO: Make this dynamic using v-for -->
         <template v-if="hasMediaSourceAdded">
             <template v-if="hasCameraOnly">
                 <div class="media-source camera-media-source">

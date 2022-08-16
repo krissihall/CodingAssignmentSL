@@ -1,4 +1,5 @@
 <template>
+    <!-- TODO: use transition to animate this Modal in and out -->
     <div class="modal">
         <div class="modal-content">
             <div class="modal-header">

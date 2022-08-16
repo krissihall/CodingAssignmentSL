@@ -1,5 +1,6 @@
 <template>
     <div class="source-controls-container">
+        <!-- TODO: Put buttons in Object and use v-for to create -->
         <template v-if="hasCameraOnly && showCameraFeed && !showCaptureAndCamera">
             <div class="camera-controls controls">
                 <button class="button" @click="setCameraSize(100)" :class="{ active: cameraSize == 100 }">
@@ -51,6 +52,15 @@
 
 <script setup>
 import { inject } from 'vue';
+
+// TODO: Create object for buttons to be created dynamically
+// defineProps({
+//     buttons: {
+//         camera: { id: 1 },
+//         capture: { id: 2 },
+//         both: { id: 3 }
+//     }
+// });
 
 const hasCameraOnly = inject('hasCameraOnly');
 const hasCaptureOnly = inject('hasCaptureOnly');
