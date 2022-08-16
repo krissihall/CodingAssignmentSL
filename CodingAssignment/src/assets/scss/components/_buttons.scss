@@ -1,0 +1,58 @@
+// Base button styles
+.btn {
+    border: none;
+    border-radius: toRem(4);
+    cursor: pointer;
+    @include medium-font;
+    font-size: toRem(12);
+    padding: toRem(12) toRem(64);
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+
+    &.btn-primary {
+        background: $primary;
+        color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: darken($primary, 5%);
+            @include box-border(darken($primary, 12%));
+        }
+    }
+
+    &.btn-secondary {
+        background: $light-gray;
+        color: $black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: darken($light-gray, 5%);
+            @include box-border(darken($light-gray, 12%));
+        }
+    }
+
+    &.btn-danger {
+        background: $white;
+        color: $error;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: $light-gray;
+            @include box-border(darken($light-gray, 12%));
+        }
+    }
+
+    &.btn-lg {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    &.btn-sm {
+        padding-left: toRem(16);
+        padding-right: toRem(16);
+    }
+}

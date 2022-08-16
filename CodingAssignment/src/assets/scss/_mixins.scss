@@ -1,0 +1,28 @@
+@function toRem($value) {
+    $remValue: calc($value / 16) + rem; 
+    @return $remValue;
+}
+
+@mixin light-font () {
+    font-family: $default-font;
+    font-weight: 300;
+}
+
+@mixin default-font () {
+    font-family: $default-font;
+    font-weight: 400;
+}
+
+@mixin medium-font () {
+    font-family: $default-font;
+    font-weight: 600;
+}
+
+@mixin bold-font () {
+    font-family: $default-font;
+    font-weight: 700;
+}
+
+@mixin box-border ($color, $size: 2) {
+    box-shadow: inset toRem($size) toRem($size) 0 0 $color, inset toRem(-$size) toRem(-$size) 0 0 $color;
+}

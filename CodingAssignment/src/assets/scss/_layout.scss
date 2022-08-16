@@ -1,0 +1,27 @@
+html,
+body {
+    @include default-font;
+    height: 100%;
+}
+
+.app-container {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.main-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0;
+    height: 100%;
+    margin: 0 auto 0 0;
+    max-width: toRem(1500);
+    width: 100%;
+}
+
+.img-responsive {
+    display: block;
+    width: 100%;
+}

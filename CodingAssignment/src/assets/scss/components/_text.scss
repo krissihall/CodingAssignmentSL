@@ -1,0 +1,37 @@
+h1,
+.h1 {
+    @include bold-font;
+    font-size: toRem(32);
+    margin-bottom: toRem(32);
+}
+
+h2,
+.h2 {
+    @include bold-font;
+    font-size: toRem(24);
+    margin-bottom: toRem(24);
+}
+
+h3,
+.h3 {
+    @include medium-font;
+    font-size: toRem(18);
+    margin-bottom: toRem(18);
+}
+
+p,
+.p {
+    color: $dark-gray;
+    font-size: toRem(16);
+    line-height: toRem(20);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.error-msg {
+    color: $error;
+    @include medium-font;
+    margin-bottom: toRem(8);
+}
